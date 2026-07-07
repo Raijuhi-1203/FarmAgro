@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Farm Agro</string>
+    <string name="batch">batch</string>
+    <string name="navigation_drawer_open">open\n</string>
+    <string name="navigation_drawer_close">close</string>
+
+    <string-array name="gender_array">
+        <item>Male</item>
+        <item>Female</item>
+    </string-array>
+
+    <string-array name="cancelorder">
+        <item>Damaged and Missing Product</item>
+        <item>Order by mistake</item>
+        <item>Item not as described</item>
+        <item>Other</item>
+    </string-array>
+
+</resources>

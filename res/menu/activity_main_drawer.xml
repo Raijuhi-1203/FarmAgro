@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:title="Main Categories">
+        <menu>
+            <item
+                android:id="@+id/nav_home"
+                android:icon="@drawable/home"
+                android:title="Home" />
+        </menu>
+    </item>
+
+
+    <item android:title="Order &amp; Cart">
+        <menu>
+            <item
+                android:id="@+id/nav_myorder"
+                android:icon="@drawable/prd"
+                android:title="My Order" />
+            <item
+                android:id="@+id/nav_cart"
+                android:icon="@drawable/bag"
+                android:title="My Cart" />
+        </menu>
+    </item>
+
+
+    <item android:title="Account">
+        <menu>
+            <item
+                android:id="@+id/nav_myac"
+                android:icon="@drawable/user"
+                android:title="My Account" />
+
+            <item
+                android:id="@+id/nav_logout"
+                android:icon="@drawable/lg"
+                android:title="Logout" />
+        </menu>
+    </item>
+
+
+    <item android:title="Rate &amp; Support">
+        <menu>
+            <item
+                android:id="@+id/nav_contact"
+                android:icon="@drawable/contact"
+                android:title="Contact" />
+            <item
+                android:id="@+id/nav_rate"
+                android:icon="@drawable/rate"
+                android:title="Rate Us" />
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/share"
+                android:title="Share" />
+        </menu>
+    </item>
+
+    <item android:title="Common Info">
+        <menu>
+            <item
+                android:id="@+id/nav_about"
+                android:icon="@drawable/about"
+                android:title="About" />
+            <item
+                android:id="@+id/nav_term"
+                android:icon="@drawable/term"
+                android:title="Term &amp; Condition" />
+            <item
+                android:id="@+id/nav_privacy"
+                android:icon="@drawable/privacy"
+                android:title="Privacy Policy" />
+            <item
+                android:id="@+id/nav_developer"
+                android:icon="@drawable/developer"
+                android:title="Developer" />
+        </menu>
+    </item>
+</menu>

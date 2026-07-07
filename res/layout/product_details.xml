@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true"
+        tools:context=".Activities.Grocery.PageProductDetails"
+        android:orientation="vertical">
+
+        <include layout="@layout/header2"/>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <androidx.core.widget.NestedScrollView
+                        android:layout_marginBottom="70dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_above="@+id/bt_addcart">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_margin="0dp"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:id="@+id/img"
+                                android:layout_marginTop="0dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="350dp"
+                                android:padding="5dp" />
+
+
+                            <TextView
+                                android:id="@+id/txnm"
+                                android:layout_marginLeft="5dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:padding="5dp"
+                                android:textStyle="bold"
+                                android:textSize="16dp"
+                                android:fontFamily="@font/custom_font"
+                                android:textAlignment="textStart"
+                                android:textColor="@color/black" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_margin="0dp"
+                                android:gravity="center"
+                                android:weightSum="2"
+                                android:orientation="horizontal"
+                                android:padding="5dp">
+
+                                <LinearLayout
+                                    android:layout_weight="1"
+                                    android:layout_marginLeft="3dp"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="left"
+                                    android:gravity="left"
+                                    android:orientation="horizontal"
+                                    android:padding="0dp">
+
+                                    <TextView
+                                        android:fontFamily="@font/custom_font"
+                                        android:textSize="16dp"
+                                        android:textStyle="bold"
+                                        android:id="@+id/mrp"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_margin="3dp"
+                                        android:padding="5dp"
+                                        android:textAlignment="center"
+                                        android:textColor="@color/pink" />
+
+
+                                    <TextView
+                                        android:layout_marginLeft="5dp"
+                                        android:layout_marginTop="0dp"
+                                        android:fontFamily="@font/custom_font"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:gravity="start"
+                                        android:id="@+id/unit"
+                                        android:textAlignment="textStart"
+                                        android:textColor="@color/black"
+                                        android:textSize="14dp"
+                                        android:textStyle="bold" />
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_marginRight="3dp"
+                                    android:layout_weight="1"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="right"
+                                    android:gravity="right"
+                                    android:orientation="horizontal"
+                                    android:padding="0dp">
+
+
+                                    <LinearLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:background="@drawable/btngrey"
+                                        android:gravity="center">
+
+                                        <ImageView
+                                            android:id="@+id/minus"
+                                            android:layout_width="30dp"
+                                            android:layout_height="30dp"
+                                            android:layout_gravity="center"
+                                            android:layout_margin="5dp"
+                                            android:src="@drawable/baseline_remove_circle_24" />
+
+                                        <TextView
+                                            android:fontFamily="@font/custom_font"
+                                            android:id="@+id/cartqty"
+                                            android:layout_width="30dp"
+                                            android:layout_height="30dp"
+                                            android:layout_margin="5dp"
+                                            android:gravity="center"
+                                            android:text="1"
+                                            android:textAlignment="center"
+                                            android:textColor="@color/black"
+                                            android:textSize="16dp"
+                                            android:textStyle="bold" />
+
+                                        <ImageView
+                                            android:id="@+id/add"
+                                            android:layout_width="30dp"
+                                            android:layout_height="30dp"
+                                            android:layout_margin="5dp"
+                                            android:src="@drawable/baseline_add_circle_24" />
+
+
+                                    </LinearLayout>
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+
+
+                            <TextView
+                                android:fontFamily="@font/custom_font"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="10dp"
+                                android:gravity="start"
+                                android:text="About this Item"
+                                android:textAlignment="textStart"
+                                android:textColor="@color/black"
+                                android:textSize="16dp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:fontFamily="@font/custom_font"
+                                android:id="@+id/fulldesp"
+                                android:textFontWeight="300"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="5dp"
+                                android:gravity="start"
+                                android:textAlignment="textStart"
+                                android:textColor="@color/black"
+                                android:textSize="14dp"
+                                android:textStyle="bold" />
+
+
+                        </LinearLayout>
+                    </androidx.core.widget.NestedScrollView>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/pink"
+                    android:layout_marginBottom="0dp"
+                    android:layout_alignParentBottom="true"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/pink"
+                        android:orientation="horizontal"
+                        android:weightSum="2">
+
+                        <TextView
+                            android:id="@+id/btncart"
+                            android:layout_width="match_parent"
+                            android:layout_height="60dp"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:padding="6dp"
+                            android:fontFamily="@font/custom_font"
+                            android:text="Add to cart"
+                            android:textAlignment="center"
+                            android:textColor="#fff"
+                            android:textSize="16dp" />
+
+                        <LinearLayout
+                            android:background="#fff"
+                            android:layout_width="2dp"
+                            android:layout_height="60dp"/>
+
+                        <TextView
+                            android:id="@+id/bt_buy"
+                            android:layout_width="match_parent"
+                            android:layout_height="60dp"
+                            android:background="#FFEB3B"
+                            android:fontFamily="@font/custom_font"
+                            android:layout_alignParentBottom="true"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:textSize="16dp"
+                            android:gravity="center"
+                            android:padding="6dp"
+                            android:text="Buy Now"
+                            android:textAlignment="center"
+                            android:textColor="@color/black" />
+
+
+                    </LinearLayout>
+                </LinearLayout>
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>
